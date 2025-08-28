@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 // --- Helpers
-const BANKS = ["UBL", "JS", "Meezan", "ABL", "NayaPay", "Easypaisa", "JazzCash"];
+const BANKS = ["UBL", "JS ", "Meezan ", "ABL", "NayaPay", "Easypaisa", "JazzCash"];
 const CATEGORIES = [
   "Salary", "Business", "Freelance", "Investment", "Gift", "Food", "Transport", "Bills", "Education", "Health", "Shopping", "Rent", "Misc"
 ];
@@ -147,7 +147,8 @@ export default function App(){
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="sticky top-0 z-10 bg-white/80 backdrop-blur border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2">
-          <h1 className="text-2xl font-bold">Personal Finance & Loans (Prototype)</h1>
+          <img src="/logo.png" alt="Finance Master Logo" className="h-10 w-auto"/>
+          <h1 className="text-2xl font-bold">Finance Master</h1>
           <span className="ml-auto"></span>
           <button onClick={()=>setTab("dashboard")} className={tabBtn(tab,"dashboard")}>Dashboard</button>
           <button onClick={()=>setTab("transactions")} className={tabBtn(tab,"transactions")}>Transactions</button>
