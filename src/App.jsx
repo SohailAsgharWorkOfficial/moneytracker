@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 // --- Helpers
-const BANKS = ["Askari", "UBL", "JS ", "Meezan Bank", "ABL", "NayaPay", "Easypaisa", "JazzCash"];
+const BANKS = ["Askari Bank", "UBL", "JS ", "Meezan Bank", "ABL", "NayaPay", "Easypaisa", "JazzCash"];
 const CATEGORIES = [
   "Salary", "Business", "Freelance", "Investment", "Gift", "Food", "Transport", "Bills", "Education", "Health", "Shopping", "Rent", "Misc"
 ];
